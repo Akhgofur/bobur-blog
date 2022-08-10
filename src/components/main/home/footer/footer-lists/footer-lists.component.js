@@ -11,7 +11,7 @@ export const FooterLists = () => {
                 FIGHT WITH ME ON:
                 </FooterListHeading>
                 {
-                    sm.map(item => <FooterItem><FooterItemLink href="#" >{item}</FooterItemLink></FooterItem>)
+                    sm.map(item => <FooterItem key={item}><FooterItemLink href="#" >{item}</FooterItemLink></FooterItem>)
                 }
                 
             </FooterList>
@@ -20,12 +20,12 @@ export const FooterLists = () => {
                 WHAT I HAVE DONE:
                 </FooterListHeading>
                 {
-                    works.map(item => <FooterItem><FooterItemLink  href="#" >{item}</FooterItemLink></FooterItem>)
+                    works.map(item => <FooterItem key={item}><FooterItemLink  href="#" >{item}</FooterItemLink></FooterItem>)
                 }
             </FooterList>
             <FooterList>
                 {
-                    contact.map(item => <FooterItem><FooterItemLink href="#" >{item}</FooterItemLink></FooterItem>)
+                    contact.map(item => <FooterItem key={item}><FooterItemLink href="#" >{item}</FooterItemLink></FooterItem>)
                 }   
             </FooterList>
         </FooterListWrapper>
