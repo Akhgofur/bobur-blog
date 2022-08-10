@@ -1,5 +1,4 @@
 import { SiteHeader } from "./header/header.component"
-import {useParams} from 'react-router-dom'
 import { HomeMain } from "./home-main/home-main.component";
 import { SiteFooter } from "./footer/footer.component";
 

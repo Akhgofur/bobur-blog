@@ -1,5 +1,5 @@
 import { FooterLists } from "./footer-lists/footer-lists.component"
-import { Footer, FooterInner, FooterLogo, FooterLogoImg, FooterLogoText } from "./footer.style"
+import { Footer, FooterInner,  FooterLogoImg } from "./footer.style"
 import Logowhite from '../../../../assets/img/logo-white.svg'
 
 export const SiteFooter = () => {

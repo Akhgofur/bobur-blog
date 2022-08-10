@@ -1,8 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom"
-import { Modal, ModalBtnWrapper, ModalCancelBtn, ModalCategoryOption, ModalCategorySelect, ModalHeading, ModalImageInput, ModalInput, ModalInputHeading, ModalSubmitBtn, ModalTextarea, ModalWrapper } from "./edit-modal.style"
+import { Modal, ModalBtnWrapper, ModalCancelBtn, ModalCategoryOption, ModalCategorySelect, ModalHeading, ModalInput, ModalInputHeading, ModalSubmitBtn, ModalTextarea, ModalWrapper } from "./edit-modal.style"
 import { useSelector, useDispatch } from "react-redux"
 import { useContext, useEffect, useRef } from "react"
-import { editPost, editSync, getSingle } from "../home/home-main/posts-slice/posts-slice"
+import { editPost, getSingle } from "../home/home-main/posts-slice/posts-slice"
 import { AuthContext } from "../../../context/auth-context"
 
 export const EditModal = () => {

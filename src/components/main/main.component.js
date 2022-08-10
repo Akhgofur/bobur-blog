@@ -1,8 +1,6 @@
-import { useContext, useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { AuthContext } from "../../context/auth-context"
-import { SiteHeader } from "./home/header/header.component"
-import { baseUrl, getCategories, getPosts } from "./home/home-main/posts-slice/posts-slice"
+import {  useEffect } from "react"
+import { useDispatch} from "react-redux"
+import { getCategories, getPosts } from "./home/home-main/posts-slice/posts-slice"
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Home } from "./home/home.component"
 import { SinglePost } from "./single/single.component"
@@ -11,8 +9,6 @@ import { EditModal } from "./edit-modal/edit-modal.component"
 import { CreateModal } from "./create-modal/create-modal.component"
 
 const SiteMain = () => {
-
-    const {token} = useContext(AuthContext)
     const dispatch = useDispatch()
 
     
